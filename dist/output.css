@@ -634,12 +634,13 @@ video {
   grid-column: span 8 / span 8;
 }
 
-.m-8 {
-  margin: 2rem;
-}
-
 .m-7 {
   margin: 1.75rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mx-12 {
@@ -665,16 +666,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 .-mt-2 {
@@ -845,6 +836,10 @@ video {
   height: 2.75rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -873,12 +868,8 @@ video {
   height: 560px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
+.w-64 {
+  width: 16rem;
 }
 
 .w-\[10px\] {
@@ -923,14 +914,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .flex-none {
@@ -991,10 +974,6 @@ video {
 
 .gap-\[130px\] {
   gap: 130px;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .rounded-2xl {
@@ -1186,6 +1165,16 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -1239,16 +1228,6 @@ video {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .pb-3 {
@@ -1357,10 +1336,6 @@ video {
 
 .text-end {
   text-align: end;
-}
-
-.align-top {
-  vertical-align: top;
 }
 
 .align-text-top {
@@ -1594,12 +1569,4 @@ video {
 
 .group:hover .group-hover\:block {
   display: block;
-}
-
-.group:focus .group-focus\:fill-\[\#D10B05\] {
-  fill: #D10B05;
-}
-
-.group:focus .group-focus\:outline-\[\#D10B05\] {
-  outline-color: #D10B05;
 }

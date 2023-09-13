@@ -28,4 +28,9 @@ function showSlide() {
       element.classList.add("hidden");
     }
   }
+
 }
+
+
+
+
