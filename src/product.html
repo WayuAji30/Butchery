@@ -313,16 +313,19 @@
               <p class="font-semibold text-[18px]">Pilih varian:</p>
               <div class="flex gap-3 mt-4">
                 <button
+                  id="low"
                   class="py-2 px-4 rounded-lg border-2 border-gray-300 focus:border-[#D10B05] focus:text-[#D10B05]"
                 >
                   250gr
                 </button>
                 <button
+                  id="mid"
                   class="py-2 px-4 rounded-lg border-2 border-gray-300 focus:border-[#D10B05] focus:text-[#D10B05]"
                 >
                   500gr
                 </button>
                 <button
+                  id="high"
                   class="py-2 px-6 rounded-lg border-2 border-gray-300 focus:border-[#D10B05] focus:text-[#D10B05]"
                 >
                   1kg
@@ -417,7 +420,8 @@
                     </p>
                   </div>
                   <p class="mt-7">
-                    Pilihan Varian: <span class="font-semibold">500gr</span>
+                    Pilihan Varian:
+                    <span class="font-semibold" id="item-weight"></span>
                   </p>
                   <div
                     class="border-t-2 border-solid border-[#E6E6E6] mt-2"
