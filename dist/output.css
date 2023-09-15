@@ -796,6 +796,18 @@ video {
   margin-top: 2.25rem;
 }
 
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -928,6 +940,14 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -970,6 +990,22 @@ video {
 
 .gap-\[130px\] {
   gap: 130px;
+}
+
+.place-self-end {
+  place-self: end;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.self-baseline {
+  align-self: baseline;
 }
 
 .rounded-2xl {
@@ -1359,6 +1395,20 @@ video {
   font-size: 36px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1593,8 +1643,44 @@ video {
     margin-top: 1.75rem;
   }
 
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .md\:w-\[95\%\] {
+    width: 95%;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-center {
@@ -1615,6 +1701,14 @@ video {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .md\:pt-56 {
+    padding-top: 14rem;
+  }
+
+  .md\:pt-60 {
+    padding-top: 15rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1634,8 +1728,24 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .lg\:flex-none {
+    flex: none;
   }
 
   .lg\:justify-normal {
@@ -1659,5 +1769,9 @@ video {
 
   .lg\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .lg\:pt-\[201px\] {
+    padding-top: 201px;
   }
 }
