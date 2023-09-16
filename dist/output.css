@@ -1838,6 +1838,14 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .placeholder\:md\:text-\[14px\]::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  .placeholder\:md\:text-\[14px\]::placeholder {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1966,6 +1974,16 @@ video {
   }
 
   .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .placeholder\:lg\:text-base::-moz-placeholder {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .placeholder\:lg\:text-base::placeholder {
     font-size: 1rem;
     line-height: 1.5rem;
   }
