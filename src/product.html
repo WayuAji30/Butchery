@@ -25,23 +25,25 @@
   <body>
     <!-- NAVBAR -->
     <nav class="fixed top-0 w-full z-50">
-      <div class="">
+      <div class="lg:block md:hidden">
         <div class="bg-[#D10B05] py-4">
-          <div class="mx-12 flex items-center justify-between">
+          <div class="lg:mx-12 md:mx-8 flex items-center justify-between">
             <div class="flex">
               <img src="asset/navbar/phone.svg" alt="" class="pr-2 -mt-2" />
-              <p class="text-white mr-4">Butchery app is now available on</p>
+              <p class="text-white lg:mr-4 md:mr-0 md:text-xs lg:text-base">
+                Butchery app is now available on
+              </p>
               <a href="" class="mr-1"
                 ><img src="asset/navbar/googleplay.svg" alt=""
               /></a>
               <a href=""><img src="asset/navbar/appstore.svg" alt="" /></a>
             </div>
-            <div class="flex gap-5">
+            <div class="flex lg:gap-5 md:gap-1 md:text-xs lg:text-base">
               <a href="" class="text-white flex"
                 ><img
                   src="asset/navbar/office.svg"
                   alt=""
-                  class="pr-1"
+                  class="pr-1 md:w-[25%] lg:w-fit"
                 />Tentang Kami</a
               >
               <a href="" class="text-white flex"
@@ -61,12 +63,14 @@
       </div>
 
       <div class="bg-white drop-shadow-md">
-        <div class="pt-6 pb-7 items-center justify-between flex px-10">
+        <div
+          class="pt-6 pb-7 items-center justify-between flex lg:px-10 md:px-5"
+        >
           <a href="index.html"
             ><img
               src="asset/navbar/LogoButchery.svg"
               alt="LogoButchery"
-              class="mr-9"
+              class="lg:mr-9 md:mr-0 lg:w-fit md:w-[70%]"
           /></a>
           <div class="flex mr-8">
             <form action="">
@@ -76,14 +80,15 @@
                   name=""
                   id=""
                   placeholder="Beli Daging Segar Dengan Kualitas Terbaik Disini"
-                  class="border-solid border-2 border-slate-300 rounded-md w-[650px] pl-5 py-4 focus:outline-[#D10B05]"
+                  class="border-solid border-2 border-slate-300 rounded-md lg:w-[650px] md:w-[400px] md:h-12 lg:h-auto lg:-ml-0 md:-ml-10 placeholder:text-[14px] pl-5 py-4 focus:outline-[#D10B05]"
                 />
-                <button class="absolute right-7">
+                <button class="absolute lg:right-7 md:right-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
+                    class="lg:w-auto md:w-[25px]"
                   >
                     <path
                       class="hover:fill-[#D10B05]"
@@ -95,7 +100,7 @@
               </div>
             </form>
           </div>
-          <div class="gap-3 flex" id="icon-bar">
+          <div class="lg:gap-3 md:gap-1 flex" id="icon-bar">
             <a href="" class="p-1 rounded-lg hover:bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,22 +153,41 @@
               </svg>
             </a>
           </div>
-          <img src="asset/navbar/pembatas.svg" alt="" class="mx-4" />
-          <div class="flex gap-3">
-            <form action="login.html">
-              <button
-                class="border-solid border-2 border-[#D10B05] font-semibold rounded-lg py-3 px-10 text-[#D10B05] hover:bg-[#D10B05] hover:text-white"
-              >
-                Masuk
-              </button>
-            </form>
-            <form action="register.html">
-              <button
-                class="border-solid border-2 bg-[#D10B05] font-semibold rounded-lg py-3 px-10 border-[#D10B05] text-white mr-4 hover:bg-[#9F0804] hover:border-[#9F0804]"
-              >
-                Daftar
-              </button>
-            </form>
+          <img
+            src="asset/navbar/pembatas.svg"
+            alt=""
+            class="mx-4 lg:block md:hidden"
+          />
+          <div class="lg:block md:hidden">
+            <div class="flex gap-3">
+              <form action="login.html">
+                <button
+                  class="border-solid border-2 border-[#D10B05] font-semibold rounded-lg lg:py-3 md:py-2 lg:px-10 md:px-3 text-[#D10B05] hover:bg-[#D10B05] hover:text-white"
+                >
+                  Masuk
+                </button>
+              </form>
+              <form action="register.html">
+                <button
+                  class="border-solid border-2 bg-[#D10B05] font-semibold rounded-lg lg:py-3 md:py-2 lg:px-10 md:px-3 border-[#D10B05] text-white mr-4 hover:bg-[#9F0804] hover:border-[#9F0804]"
+                >
+                  Daftar
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="asset/navbar/pembatas.svg"
+              alt=""
+              class="mr-2 lg:hidden md:block"
+            />
+            <a href=""
+              ><img
+                src="asset/navbar/profile.svg"
+                alt=""
+                class="lg:hidden md:block"
+            /></a>
           </div>
         </div>
       </div>
@@ -171,7 +195,7 @@
     <!-- NAVBAR -->
 
     <!-- Product -->
-    <div class="lg:pt-[201px] md:pt-60 px-12 w-full">
+    <div class="lg:pt-[201px] md:pt-32 px-12 w-full">
       <div class="container mx-auto">
         <div class="grid grid-cols-12">
           <!-- Left -->
