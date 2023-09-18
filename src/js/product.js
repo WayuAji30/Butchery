@@ -1,55 +1,58 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Menyimpan harga dan berat untuk setiap opsi
-  const options = {
-    low: { berat: "250gr", harga: 99000 },
-    mid: { berat: "500gr", harga: 150000 },
-    high: { berat: "1kg", harga: 200000 },
-  };
+  // Mengambil elemen-elemen HTML yang diperlukan
+  const lowButton = document.getElementById("low");
+  const midButton = document.getElementById("mid");
+  const highButton = document.getElementById("high");
+  const plusButton = document.getElementById("plus");
+  const minusButton = document.getElementById("mines");
+  const valueProduct = document.getElementById("value-product");
+  const itemWeight = document.getElementById("item-weight");
+  const totalValue = document.getElementById("total-value");
+  const valueView = document.getElementById("value-view");
 
-  // Menginisialisasi nilai awal
-  let selectedOption = "low";
-  let jumlahProduk = 1;
+  // Mendefinisikan harga awal
+  let currentPrice = 99000;
+  let currentWeight = "250gr";
 
-  // Fungsi untuk mengupdate tampilan
-  function updateView() {
-    // Mengupdate berat yang ditampilkan
-    document.getElementById("item-weight").textContent =
-      options[selectedOption].berat;
+  // Menetapkan nilai awal pada elemen-elemen HTML
+  valueProduct.innerText = "1";
+  itemWeight.innerText = currentWeight;
+  totalValue.innerText = currentPrice.toLocaleString("id-ID");
+  valueView.innerText = currentPrice.toLocaleString("id-ID");
 
-    // Menghitung total harga
-    const totalHarga = options[selectedOption].harga * jumlahProduk;
-    document.getElementById("total-value").textContent =
-      totalHarga.toLocaleString();
+  // Menangani klik pada tombol berat
+  function handleWeightButtonClick(weight, price) {
+    return function () {
+      currentPrice = price;
+      currentWeight = weight;
+      itemWeight.innerText = weight;
+      totalValue.innerText = currentPrice.toLocaleString("id-ID");
+      valueView.innerText = currentPrice.toLocaleString("id-ID");
+      valueProduct.innerText = "1";
+    };
   }
 
-  // Mengubah opsi ketika button berat diklik
-  document.getElementById("low").addEventListener("click", function () {
-    selectedOption = "low";
-    updateView();
+  lowButton.addEventListener("click", handleWeightButtonClick("250gr", 99000));
+  midButton.addEventListener("click", handleWeightButtonClick("500gr", 150000));
+  highButton.addEventListener("click", handleWeightButtonClick("1kg", 200000));
+
+  // Menangani klik pada tombol plus
+  plusButton.addEventListener("click", function () {
+    valueProduct.innerText = (parseInt(valueProduct.innerText) + 1).toString();
+    totalValue.innerText = (
+      currentPrice * parseInt(valueProduct.innerText)
+    ).toLocaleString("id-ID");
   });
 
-  document.getElementById("mid").addEventListener("click", function () {
-    selectedOption = "mid";
-    updateView();
-  });
-
-  document.getElementById("high").addEventListener("click", function () {
-    selectedOption = "high";
-    updateView();
-  });
-
-  // Mengubah jumlah produk saat tombol plus atau minus diklik
-  document.getElementById("plus").addEventListener("click", function () {
-    jumlahProduk++;
-    document.getElementById("value-product").textContent = jumlahProduk;
-    updateView();
-  });
-
-  document.getElementById("mines").addEventListener("click", function () {
-    if (jumlahProduk > 1) {
-      jumlahProduk--;
-      document.getElementById("value-product").textContent = jumlahProduk;
-      updateView();
+  // Menangani klik pada tombol minus
+  minusButton.addEventListener("click", function () {
+    if (parseInt(valueProduct.innerText) > 1) {
+      valueProduct.innerText = (
+        parseInt(valueProduct.innerText) - 1
+      ).toString();
+      totalValue.innerText = (
+        currentPrice * parseInt(valueProduct.innerText)
+      ).toLocaleString("id-ID");
     }
   });
 });
