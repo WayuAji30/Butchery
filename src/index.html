@@ -58,11 +58,11 @@
 
   <body>
     <!-- todo Preloader -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
       <div class="loader">
         <img src="asset/loader/loader-animasi.gif" alt="loader" />
       </div>
-    </div>
+    </div> -->
     <!-- todo Preloader -->
     <!-- NAVBAR -->
     <nav class="fixed top-0 w-full z-50">
@@ -611,203 +611,812 @@
               </button>
             </div>
           </div>
-          <div class="grid grid-cols-12 mx-16 gap-[130px] mt-8 mb-11">
-            <!-- 1 -->
-            <div class="col-span-2">
-              <a href="">
-                <div
-                  class="bg-white h-[344px] w-[228px] rounded-2xl drop-shadow-lg"
-                >
-                  <img src="asset/card/wagyuSirloin.png" alt="" />
-                  <div class="pt-3 pl-3">
-                    <p class="text-[14px] leading-4 font-medium">
-                      Wagyu Sirloin Meltique <br />
-                      Beef Steak 200gr
-                    </p>
-                    <p class="font-bold pt-2">Rp<span>34.900</span></p>
-                    <p class="pt-5 flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/clarity_store-solid.svg"
-                        alt=""
-                      />Morning Raise Farm
-                    </p>
-                    <p class="text-[#D10B05] font-medium flex">
-                      <img
-                        class="pr-2"
-                        src="asset/card/solar_point-on-map-bold.svg"
-                        alt=""
-                      />Jakarta Selatan
-                    </p>
-                    <p class="flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/ic_round-star.svg"
-                        alt=""
-                      /><span class="pr-1">4.9</span> |
-                      <span class="pl-1">1</span>rb+ terjual
-                    </p>
-                  </div>
+          <swiper-container
+            class="mySwiper mt-6 mb-6"
+            navigation="true"
+            pagination="false"
+            keyboard="true"
+            mousewheel="true"
+            css-mode="true"
+            loop="true"
+          >
+            <swiper-slide>
+              <div class="flex mx-16 gap-8">
+                <!-- 1 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/wagyuSirloin.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Wagyu Sirloin Meltique <br />
+                          Beef Steak 200gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Morning Raise Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Selatan
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1">1</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <!-- 2 -->
-            <div class="col-span-2">
-              <a href="">
-                <div
-                  class="bg-white h-[344px] w-[228px] rounded-2xl drop-shadow-lg"
-                >
-                  <img src="asset/card/sapiUS.png" alt="" />
-                  <div class="pt-3 pl-3">
-                    <p class="text-[14px] leading-4 font-medium">
-                      Daging Sapi US Shortplate <br />
-                      Beef Slice 250gr
-                    </p>
-                    <p class="font-bold pt-2">Rp<span>39.900</span></p>
-                    <p class="pt-5 flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/clarity_store-solid.svg"
-                        alt=""
-                      />Eternity Farm
-                    </p>
-                    <p class="text-[#D10B05] font-medium flex">
-                      <img
-                        class="pr-2"
-                        src="asset/card/solar_point-on-map-bold.svg"
-                        alt=""
-                      />Bogor Utara
-                    </p>
-                    <p class="flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/ic_round-star.svg"
-                        alt=""
-                      /><span class="pr-1">4.8</span> |
-                      <span class="pl-1 pr-1">501</span> terjual
-                    </p>
-                  </div>
+                <!-- 2 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/sapiUS.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Sapi US Shortplate <br />
+                          Beef Slice 250gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>39.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Eternity Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bogor Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.8</span> |
+                          <span class="pl-1 pr-1">501</span> terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <!-- 3 -->
-            <div class="col-span-2">
-              <a href="">
-                <div
-                  class="bg-white h-[344px] w-[228px] rounded-2xl drop-shadow-lg"
-                >
-                  <img src="asset/card/ayamSlice.png" alt="" />
-                  <div class="pt-3 pl-3">
-                    <p class="text-[14px] leading-4 font-medium">
-                      Daging Ayam Slice Kualitas <br />
-                      Restoran Premium
-                    </p>
-                    <p class="font-bold pt-2">Rp<span>60.000</span></p>
-                    <p class="pt-5 flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/clarity_store-solid.svg"
-                        alt=""
-                      />Abadi Jaya Farm
-                    </p>
-                    <p class="text-[#D10B05] font-medium flex">
-                      <img
-                        class="pr-2"
-                        src="asset/card/solar_point-on-map-bold.svg"
-                        alt=""
-                      />Bekasi Timur
-                    </p>
-                    <p class="flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/ic_round-star.svg"
-                        alt=""
-                      /><span class="pr-1">4.9</span> |
-                      <span class="pl-1 pr-1">774</span>terjual
-                    </p>
-                  </div>
+                <!-- 3 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamSlice.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Ayam Slice Kualitas <br />
+                          Restoran Premium
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>60.000</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Abadi Jaya Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bekasi Timur
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1 pr-1">774</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <!-- 4 -->
-            <div class="col-span-2">
-              <a href="">
-                <div
-                  class="bg-white h-[344px] w-[228px] rounded-2xl drop-shadow-lg"
-                >
-                  <img src="asset/card/ayamKarkas.png" alt="" />
-                  <div class="pt-3 pl-3">
-                    <p class="text-[14px] leading-4 font-medium">
-                      Ayam Karkas Broiler / <br />
-                      Ayam Potong Utuh 900gr
-                    </p>
-                    <p class="font-bold pt-2">Rp<span>34.500</span></p>
-                    <p class="pt-5 flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/clarity_store-solid.svg"
-                        alt=""
-                      />Makmur Berkah Farm
-                    </p>
-                    <p class="text-[#D10B05] font-medium flex">
-                      <img
-                        class="pr-2"
-                        src="asset/card/solar_point-on-map-bold.svg"
-                        alt=""
-                      />Jakarta Utara
-                    </p>
-                    <p class="flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/ic_round-star.svg"
-                        alt=""
-                      /><span class="pr-1">5.0</span> |
-                      <span class="pl-1 pr-1">836</span>terjual
-                    </p>
-                  </div>
+                <!-- 4 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamKarkas.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ayam Karkas Broiler / <br />
+                          Ayam Potong Utuh 900gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.500</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Makmur Berkah Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1 pr-1">836</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <!-- 5 -->
-            <div class="col-span-2">
-              <a href="">
-                <div
-                  class="bg-white h-[344px] w-[228px] rounded-2xl drop-shadow-lg"
-                >
-                  <img src="asset/card/ikanDori.png" alt="" />
-                  <div class="pt-3 pl-3">
-                    <p class="text-[14px] leading-4 font-medium">
-                      Ikan Dori Fillet Grade A <br />
-                      (200-300gr)
-                    </p>
-                    <p class="font-bold pt-2">Rp<span>19.800</span></p>
-                    <p class="pt-5 flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/clarity_store-solid.svg"
-                        alt=""
-                      />Sentosa Farm
-                    </p>
-                    <p class="text-[#D10B05] font-medium flex">
-                      <img
-                        class="pr-2"
-                        src="asset/card/solar_point-on-map-bold.svg"
-                        alt=""
-                      />Depok
-                    </p>
-                    <p class="flex text-[#999]">
-                      <img
-                        class="pr-2"
-                        src="asset/card/ic_round-star.svg"
-                        alt=""
-                      /><span class="pr-1">5.0</span> |
-                      <span class="pl-1">4</span>rb+ terjual
-                    </p>
-                  </div>
+                <!-- 5 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ikanDori.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ikan Dori Fillet Grade A <br />
+                          (200-300gr)
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>19.800</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Sentosa Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Depok
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1">4</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          </div>
+              </div></swiper-slide
+            >
+            <swiper-slide
+              ><div class="flex mx-16 gap-8">
+                <!-- 1 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/wagyuSirloin.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Wagyu Sirloin Meltique <br />
+                          Beef Steak 200gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Morning Raise Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Selatan
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1">1</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 2 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/sapiUS.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Sapi US Shortplate <br />
+                          Beef Slice 250gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>39.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Eternity Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bogor Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.8</span> |
+                          <span class="pl-1 pr-1">501</span> terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 3 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamSlice.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Ayam Slice Kualitas <br />
+                          Restoran Premium
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>60.000</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Abadi Jaya Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bekasi Timur
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1 pr-1">774</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 4 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamKarkas.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ayam Karkas Broiler / <br />
+                          Ayam Potong Utuh 900gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.500</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Makmur Berkah Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1 pr-1">836</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 5 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ikanDori.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ikan Dori Fillet Grade A <br />
+                          (200-300gr)
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>19.800</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Sentosa Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Depok
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1">4</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide
+              ><div class="flex mx-16 gap-8">
+                <!-- 1 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/wagyuSirloin.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Wagyu Sirloin Meltique <br />
+                          Beef Steak 200gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Morning Raise Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Selatan
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1">1</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 2 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/sapiUS.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Sapi US Shortplate <br />
+                          Beef Slice 250gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>39.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Eternity Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bogor Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.8</span> |
+                          <span class="pl-1 pr-1">501</span> terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 3 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamSlice.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Ayam Slice Kualitas <br />
+                          Restoran Premium
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>60.000</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Abadi Jaya Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bekasi Timur
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1 pr-1">774</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 4 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamKarkas.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ayam Karkas Broiler / <br />
+                          Ayam Potong Utuh 900gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.500</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Makmur Berkah Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1 pr-1">836</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 5 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ikanDori.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ikan Dori Fillet Grade A <br />
+                          (200-300gr)
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>19.800</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Sentosa Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Depok
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1">4</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide
+              ><div class="flex mx-16 gap-8">
+                <!-- 1 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/wagyuSirloin.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Wagyu Sirloin Meltique <br />
+                          Beef Steak 200gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Morning Raise Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Selatan
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1">1</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 2 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/sapiUS.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Sapi US Shortplate <br />
+                          Beef Slice 250gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>39.900</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Eternity Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bogor Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.8</span> |
+                          <span class="pl-1 pr-1">501</span> terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 3 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamSlice.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Daging Ayam Slice Kualitas <br />
+                          Restoran Premium
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>60.000</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Abadi Jaya Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Bekasi Timur
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">4.9</span> |
+                          <span class="pl-1 pr-1">774</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 4 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[335px] w-[228px] rounded-2xl drop-shadow-lg mb-2"
+                    >
+                      <img src="asset/card/ayamKarkas.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ayam Karkas Broiler / <br />
+                          Ayam Potong Utuh 900gr
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>34.500</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Makmur Berkah Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Jakarta Utara
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1 pr-1">836</span>terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 5 -->
+                <div class="col-span-2">
+                  <a href="">
+                    <div
+                      class="bg-white h-[330px] w-[228px] rounded-2xl drop-shadow-md mb-2"
+                    >
+                      <img src="asset/card/ikanDori.png" alt="" />
+                      <div class="pt-3 pl-3">
+                        <p class="text-[14px] leading-4 font-medium">
+                          Ikan Dori Fillet Grade A <br />
+                          (200-300gr)
+                        </p>
+                        <p class="font-bold pt-2">Rp<span>19.800</span></p>
+                        <p class="pt-5 flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/clarity_store-solid.svg"
+                            alt=""
+                          />Sentosa Farm
+                        </p>
+                        <p class="text-[#D10B05] font-medium flex">
+                          <img
+                            class="pr-2"
+                            src="asset/card/solar_point-on-map-bold.svg"
+                            alt=""
+                          />Depok
+                        </p>
+                        <p class="flex text-[#999]">
+                          <img
+                            class="pr-2"
+                            src="asset/card/ic_round-star.svg"
+                            alt=""
+                          /><span class="pr-1">5.0</span> |
+                          <span class="pl-1">4</span>rb+ terjual
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
         </div>
       </div>
     </div>
@@ -1910,6 +2519,7 @@
       });
       splide.mount();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/custom.js"></script>
