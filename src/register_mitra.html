@@ -39,7 +39,12 @@
             <p class="font-medium text-[24px] mt-2 text-[#999]">Pusat Mitra</p>
           </div>
           <div class="lg:gap-3 md:gap-1 flex items-center" id="icon-bar">
-            <a href=""><img src="asset/registerMitra/profile.svg" alt="" /></a>
+            <a href=""
+              ><img
+                src="asset/registerMitra/profile.svg"
+                alt=""
+                class="border-2 border-[#D10B05] rounded-full"
+            /></a>
             <p class="font-medium">Rahmat Messi Talahu</p>
           </div>
         </div>
@@ -86,10 +91,10 @@
             </div>
           </div>
           <div class="col-span-5 ml-7">
-            <form action="">
+            <form action="index.html">
               <p class="font-semibold text-[18px]">Masukan Nama Toko Kamu</p>
               <input
-                class="pl-5 py-3 mt-5 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05]"
+                class="pl-5 py-3 mt-5 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05] font-medium"
                 type="text"
                 name=""
                 id=""
@@ -104,14 +109,14 @@
               <br />
               <input
                 class="pl-5 py-3 mt-3 mb-5 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05]"
-                type="text"
+                type="email"
                 name=""
                 id="email"
                 placeholder="Messitahaluasix@gmail.com"
                 disabled
               />
               <br />
-              <label for="email" class="font-medium text-[#787878]"
+              <label for="telepon" class="font-medium text-[#787878]"
                 >No. Telepon</label
               >
               <br />
@@ -119,11 +124,11 @@
                 class="pl-5 py-3 mt-3 mb-5 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05]"
                 type="text"
                 name=""
-                id="email"
+                id="telepon"
                 placeholder=""
               />
               <br />
-              <label for="email" class="font-medium text-[#787878]"
+              <label for="whatsapp" class="font-medium text-[#787878]"
                 >No. Whatsapp (Contact Person)</label
               >
               <br />
@@ -131,17 +136,20 @@
                 class="pl-5 py-3 mt-3 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05]"
                 type="text"
                 name=""
-                id="email"
+                id="whatsapp"
                 placeholder=""
               />
 
               <p class="font-semibold text-[18px] mt-20 mb-4">
                 Masukan Alamat Toko
               </p>
-              <label for="" class="text-[#787878]">Provinsi</label> <br />
+              <label for="provinsi" class="text-[#787878] font-semibold"
+                >Provinsi</label
+              >
+              <br />
               <select
                 name=""
-                id=""
+                id="provinsi"
                 class="pl-5 py-3 mt-3 border-solid border-2 border-[#CCCCCC] rounded-lg w-[80%] focus:outline-[#D10B05]"
               >
                 <option value="">DKI Jakarta</option>
@@ -150,7 +158,9 @@
               ><br />
               <div class="flex mt-4 gap-16 mb-5">
                 <div class="flex-col">
-                  <label for="kota">Kota</label>
+                  <label for="kota" class="text-[#787878] font-semibold"
+                    >Kota</label
+                  >
                   <select
                     name=""
                     id="kota"
@@ -162,7 +172,9 @@
                   </select>
                 </div>
                 <div class="flex-col">
-                  <label for="kecamatan">Kecamatan</label>
+                  <label for="kecamatan" class="text-[#787878] font-semibold"
+                    >Kecamatan</label
+                  >
                   <select
                     name=""
                     id="kecamatan"
@@ -174,7 +186,7 @@
                   </select>
                 </div>
               </div>
-              <label for="alamat" class="font-medium text-[#787878]"
+              <label for="alamat" class="text-[#787878] font-semibold"
                 >Alamat Detail</label
               >
               <br />
