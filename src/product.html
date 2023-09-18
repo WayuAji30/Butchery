@@ -19,6 +19,10 @@
       #fitur button:hover svg path {
         fill: white;
       }
+      .active {
+        border-bottom: 2px solid #d10b05;
+        color: #d10b05;
+      }
     </style>
   </head>
 
@@ -38,7 +42,9 @@
               /></a>
               <a href=""><img src="asset/navbar/appstore.svg" alt="" /></a>
             </div>
-            <div class="flex lg:gap-5 md:gap-1 md:text-xs lg:text-base items-center">
+            <div
+              class="flex lg:gap-5 md:gap-1 md:text-xs lg:text-base items-center"
+            >
               <a href="" class="text-white flex"
                 ><img
                   src="asset/navbar/office.svg"
@@ -46,7 +52,7 @@
                   class="pr-1 md:w-[25%] lg:w-fit"
                 />Tentang Kami</a
               >
-              <a href="" class="text-white flex"
+              <a href="register_mitra.html" class="text-white flex"
                 ><img src="asset/navbar/mitra.svg" alt="" class="pr-1" />Daftar
                 Jadi Mitra
               </a>
@@ -410,7 +416,7 @@
             </div>
             <div class="flex gap-14 mt-9">
               <button
-                class="font-semibold border-b-2 border-[#D10B05] text-[#D10B05] pb-3"
+                class="font-semibold text-[#CCC] pb-3 active"
                 id="deskripsi"
               >
                 Deskripsi Produk
@@ -437,21 +443,33 @@
               kebutuhan udang segar Anda.
             </p>
             <p id="spesifikasi-text" class="mt-8" hidden>
-              Kami menyediakan udang vaname segar dengan berat 1 kilogram, hasil
-              tangkapan harian yang selalu segar dan utuh, serta bergaransi
-              kesegaran. <br />
+              Udang Vaname segar dengan ukuran 85-90 memiliki berat yang
+              tersedia dalam tiga pilihan: <br />
+              1. 250 gram <br />
+              2. 500 gram <br />
+              3. 1 kilogram <br />
               <br />
-              Layanan kami mencakup pemrosesan gratis seperti penghilangan
-              kepala, kupas bersih, dan penghilangan sisa ekor, sehingga Anda
-              dapat menikmati udang dengan mudah. Kami hanya menyediakan layanan
-              tersebut tanpa layanan tambahan lainnya. <br /><br />
-              Selain memberikan cita rasa lezat, udang vaname ini juga
-              memberikan manfaat kesehatan yang berharga, seperti tingginya
-              kandungan protein untuk pembentukan sel tubuh, yodium untuk
-              produksi hormon, kalsium untuk kesehatan gigi dan tulang, serta
-              asam lemak Omega-3 yang baik untuk kesehatan jantung. Dengan
-              produk berkualitas dan layanan yang prima, kami siap memenuhi
-              kebutuhan udang segar Anda.
+              Berikut adalah spesifikasi umum dari Udang Vaname segar dengan
+              ukuran tersebut: <br />
+              <br />
+              <b>Nama:</b> Udang Vaname segar <br />
+              <b>Ukuran:</b> 85-90 <br />
+              <b>Kondisi:</b> Segar <br />
+              <b>Asal:</b> Tergantung pada sumbernya, bisa berasal dari perairan
+              laut atau budidaya. <br />
+              <b>Penanganan:</b> Udang telah diawetkan dengan metode yang sesuai
+              untuk mempertahankan kesegarannya. <br />
+              <b>Penyimpanan:</b> Disarankan untuk disimpan dalam suhu rendah
+              dan terkendali, seperti di dalam kulkas. <br />
+              <b>Kandungan Gizi:</b> Udang adalah sumber protein tinggi dan
+              rendah lemak. Mereka juga mengandung nutrisi penting seperti
+              selenium, fosfor, dan vitamin B12. <br />
+              <br />
+              Harap diingat bahwa informasi ini bersifat umum dan dapat
+              bervariasi tergantung pada produsen atau penjual spesifik.
+              Pastikan untuk memeriksa label atau informasi yang diberikan oleh
+              penjual Anda untuk mendapatkan rincian lebih lanjut tentang produk
+              Udang Vaname segar yang Anda beli.
             </p>
             <div class="border-t-2 border-solid border-[#E6E6E6] mt-11"></div>
             <div class="mt-8">
@@ -471,10 +489,12 @@
                     src="asset/product/mdi_courier-fast.svg"
                     alt=""
                   />Pengiriman ke
-                  <span class="font-semibold pl-1">Bogor Utara</span>
-                  <button>
-                    <img src="asset/product/arrowDown.svg" alt="" />
-                  </button>
+
+                  <select name="" id="" class="font-medium">
+                    <option value="">Bogor Utara</option>
+                    <option value="">Kota Bogor</option>
+                    <option value="">Cibinong</option>
+                  </select>
                 </p>
                 <p class="ml-8">Ongkos kirim : Rp0 - Rp13.000</p>
                 <p class="mt-5">

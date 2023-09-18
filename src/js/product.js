@@ -56,3 +56,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Fuction untuk button deskripsi dan spesifikasi
+function toggleContent(contentId) {
+  const deskripsiButton = document.getElementById("deskripsi");
+  const spesifikasiButton = document.getElementById("spesifikasi");
+  const deskripsiText = document.getElementById("deskripsi-text");
+  const spesifikasiText = document.getElementById("spesifikasi-text");
+
+  if (contentId === "deskripsi") {
+    deskripsiText.hidden = false;
+    spesifikasiText.hidden = true;
+    deskripsiButton.classList.add("active");
+    spesifikasiButton.classList.remove("active");
+  } else if (contentId === "spesifikasi") {
+    deskripsiText.hidden = true;
+    spesifikasiText.hidden = false;
+    deskripsiButton.classList.remove("active");
+    spesifikasiButton.classList.add("active");
+  }
+}
+
+// Mengatur event listener untuk button deskripsi
+document.getElementById("deskripsi").addEventListener("click", function () {
+  toggleContent("deskripsi");
+});
+
+// Mengatur event listener untuk button spesifikasi
+document.getElementById("spesifikasi").addEventListener("click", function () {
+  toggleContent("spesifikasi");
+});
