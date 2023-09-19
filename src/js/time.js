@@ -2,8 +2,14 @@ function updateCountdown() {
   var now = new Date(); // Mendapatkan waktu saat ini
   var endTime = new Date(now); // Membuat salinan dari waktu saat ini
 
-  // Set endTime ke akhir hari
-  endTime.setHours(23, 59, 59, 999);
+  // Cek apakah sekarang sudah lebih dari atau sama dengan 12:00
+  if (now.getHours() >= 12) {
+    // Jika ya, set endTime ke 23:59:59
+    endTime.setHours(23, 59, 59, 999);
+  } else {
+    // Jika tidak, set endTime ke 12:00:00
+    endTime.setHours(12, 0, 0, 0);
+  }
 
   var timeDifference = endTime - now; // Menghitung selisih waktu
 
