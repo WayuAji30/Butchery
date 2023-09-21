@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
+
     <title>Butchery | Beli Daging Segar Dengan Kualitas Terbaik Disini</title>
     <link
       rel="shortcut icon"
@@ -18,6 +14,11 @@
     <style>
       #fitur button:hover svg path {
         fill: white;
+      }
+      .active {
+        border-bottom: 2px solid #d10b05;
+        color: #d10b05;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -38,7 +39,9 @@
               /></a>
               <a href=""><img src="asset/navbar/appstore.svg" alt="" /></a>
             </div>
-            <div class="flex lg:gap-5 md:gap-1 md:text-xs lg:text-base items-center">
+            <div
+              class="flex lg:gap-5 md:gap-1 md:text-xs lg:text-base items-center"
+            >
               <a href="" class="text-white flex"
                 ><img
                   src="asset/navbar/office.svg"
@@ -46,7 +49,7 @@
                   class="pr-1 md:w-[25%] lg:w-fit"
                 />Tentang Kami</a
               >
-              <a href="" class="text-white flex"
+              <a href="register_mitra.html" class="text-white flex"
                 ><img src="asset/navbar/mitra.svg" alt="" class="pr-1" />Daftar
                 Jadi Mitra
               </a>
@@ -104,8 +107,8 @@
             <a href="" class="p-1 rounded-lg hover:bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -117,8 +120,8 @@
             <a href="" class="p-1 rounded-lg hover:bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
               >
                 <g fill="none" stroke="#454545" stroke-width="2">
@@ -128,27 +131,6 @@
                     d="M6 19v-9a6 6 0 0 1 6-6v0a6 6 0 0 1 6 6v9M6 19h12M6 19H4m14 0h2m-9 3h2"
                   />
                   <circle cx="12" cy="3" r="1" />
-                </g>
-              </svg>
-            </a>
-            <a href="" class="p-1 rounded-lg hover:bg-gray-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 24 24"
-              >
-                <g
-                  fill="none"
-                  stroke="#454545"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"
-                  />
-                  <path d="m3 7l9 6l9-6" />
                 </g>
               </svg>
             </a>
@@ -337,7 +319,7 @@
               <p class="ml-2"><span>672 </span>Terjual</p>
             </div>
             <p class="font-semibold text-[36px] mt-6">
-              Rp<span id="value-view">99.000</span>
+              Rp <span id="value-view">99.000</span>
             </p>
             <section class="mt-9">
               <p class="font-semibold text-[18px]">Pilih varian:</p>
@@ -410,7 +392,7 @@
             </div>
             <div class="flex gap-14 mt-9">
               <button
-                class="font-semibold border-b-2 border-[#D10B05] text-[#D10B05] pb-3"
+                class="font-semibold text-[#CCC] pb-3 active"
                 id="deskripsi"
               >
                 Deskripsi Produk
@@ -437,21 +419,33 @@
               kebutuhan udang segar Anda.
             </p>
             <p id="spesifikasi-text" class="mt-8" hidden>
-              Kami menyediakan udang vaname segar dengan berat 1 kilogram, hasil
-              tangkapan harian yang selalu segar dan utuh, serta bergaransi
-              kesegaran. <br />
+              Udang Vaname segar dengan ukuran 85-90 memiliki berat yang
+              tersedia dalam tiga pilihan: <br />
+              1. 250 gram <br />
+              2. 500 gram <br />
+              3. 1 kilogram <br />
               <br />
-              Layanan kami mencakup pemrosesan gratis seperti penghilangan
-              kepala, kupas bersih, dan penghilangan sisa ekor, sehingga Anda
-              dapat menikmati udang dengan mudah. Kami hanya menyediakan layanan
-              tersebut tanpa layanan tambahan lainnya. <br /><br />
-              Selain memberikan cita rasa lezat, udang vaname ini juga
-              memberikan manfaat kesehatan yang berharga, seperti tingginya
-              kandungan protein untuk pembentukan sel tubuh, yodium untuk
-              produksi hormon, kalsium untuk kesehatan gigi dan tulang, serta
-              asam lemak Omega-3 yang baik untuk kesehatan jantung. Dengan
-              produk berkualitas dan layanan yang prima, kami siap memenuhi
-              kebutuhan udang segar Anda.
+              Berikut adalah spesifikasi umum dari Udang Vaname segar dengan
+              ukuran tersebut: <br />
+              <br />
+              <b>Nama:</b> Udang Vaname segar <br />
+              <b>Ukuran:</b> 85-90 <br />
+              <b>Kondisi:</b> Segar <br />
+              <b>Asal:</b> Tergantung pada sumbernya, bisa berasal dari perairan
+              laut atau budidaya. <br />
+              <b>Penanganan:</b> Udang telah diawetkan dengan metode yang sesuai
+              untuk mempertahankan kesegarannya. <br />
+              <b>Penyimpanan:</b> Disarankan untuk disimpan dalam suhu rendah
+              dan terkendali, seperti di dalam kulkas. <br />
+              <b>Kandungan Gizi:</b> Udang adalah sumber protein tinggi dan
+              rendah lemak. Mereka juga mengandung nutrisi penting seperti
+              selenium, fosfor, dan vitamin B12. <br />
+              <br />
+              Harap diingat bahwa informasi ini bersifat umum dan dapat
+              bervariasi tergantung pada produsen atau penjual spesifik.
+              Pastikan untuk memeriksa label atau informasi yang diberikan oleh
+              penjual Anda untuk mendapatkan rincian lebih lanjut tentang produk
+              Udang Vaname segar yang Anda beli.
             </p>
             <div class="border-t-2 border-solid border-[#E6E6E6] mt-11"></div>
             <div class="mt-8">
@@ -471,10 +465,12 @@
                     src="asset/product/mdi_courier-fast.svg"
                     alt=""
                   />Pengiriman ke
-                  <span class="font-semibold pl-1">Bogor Utara</span>
-                  <button>
-                    <img src="asset/product/arrowDown.svg" alt="" />
-                  </button>
+
+                  <select name="" id="" class="font-medium">
+                    <option value="">Bogor Utara</option>
+                    <option value="">Kota Bogor</option>
+                    <option value="">Cibinong</option>
+                  </select>
                 </p>
                 <p class="ml-8">Ongkos kirim : Rp0 - Rp13.000</p>
                 <p class="mt-5">
@@ -521,7 +517,7 @@
                   ></div>
                   <form action="" class="mt-5">
                     <input
-                      class="pl-4 border-2 border-[#e6e6e6] w-[100%] h-20"
+                      class="pl-4 border-2 border-[#e6e6e6] w-[100%] h-20 focus:border-[#D10B05]"
                       type="text"
                       name=""
                       id=""
@@ -737,7 +733,7 @@
                 >
                   <img src="asset/footer/butchery.svg" alt="" />
                 </button>
-                <button
+                <!-- <button
                   class="bg-white px-3 py-2 shadow-md rounded-lg"
                   disabled
                 >
@@ -748,7 +744,7 @@
                   disabled
                 >
                   <img src="asset/footer/grab.svg" alt="" />
-                </button>
+                </button> -->
               </div>
             </div>
             <div
