@@ -614,25 +614,12 @@ video {
   top: 170px;
 }
 
-<<<<<<< HEAD
 .top-\[176px\] {
   top: 176px;
-=======
-.top-\[70px\] {
-  top: 70px;
 }
 
 .top-\[71px\] {
   top: 71px;
-}
-
-.top-\[99px\] {
-  top: 99px;
-}
-
-.top-\[170px\] {
-  top: 170px;
->>>>>>> 843cea28b2d8310fd4f148d55191492b5041f875
 }
 
 .z-50 {
@@ -853,10 +840,6 @@ video {
   margin-top: 10rem;
 }
 
-.mt-44 {
-  margin-top: 11rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -917,10 +900,6 @@ video {
   display: none;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .h-11 {
   height: 2.75rem;
 }
@@ -977,12 +956,8 @@ video {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.max-h-screen {
-  max-height: 100vh;
+.h-1 {
+  height: 0.25rem;
 }
 
 .w-1 {
@@ -1021,10 +996,6 @@ video {
   width: 328px;
 }
 
-.w-\[41px\] {
-  width: 41px;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1043,6 +1014,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[41px\] {
+  width: 41px;
 }
 
 .flex-none {
@@ -1127,10 +1102,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .rounded-2xl {
@@ -1371,11 +1342,6 @@ video {
   padding-right: 85px;
 }
 
-.py-\[49px\] {
-  padding-top: 49px;
-  padding-bottom: 49px;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1480,20 +1446,8 @@ video {
   padding-top: 201px;
 }
 
-.pt-\[49px\] {
-  padding-top: 49px;
-}
-
-.pt-\[28px\] {
-  padding-top: 28px;
-}
-
 .pt-\[36px\] {
   padding-top: 36px;
-}
-
-.pt-\[5\%x\] {
-  padding-top: 5%x;
 }
 
 .text-center {
@@ -1823,10 +1777,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:top-\[120px\] {
-    top: 120px;
-  }
-
   .sm\:col-span-12 {
     grid-column: span 12 / span 12;
   }
@@ -1853,14 +1803,6 @@ video {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:w-64 {
-    width: 16rem;
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
   }
 
   .sm\:px-10 {
@@ -1956,6 +1898,14 @@ video {
     width: 70%;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-\[110\%\] {
+    width: 110%;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -1966,6 +1916,10 @@ video {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:px-16 {
@@ -2087,6 +2041,10 @@ video {
     width: fit-content;
   }
 
+  .lg\:w-\[120\%\] {
+    width: 120%;
+  }
+
   .lg\:justify-normal {
     justify-content: normal;
   }
@@ -2105,6 +2063,10 @@ video {
 
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
   .lg\:px-10 {
