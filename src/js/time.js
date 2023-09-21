@@ -10,7 +10,7 @@ function updateCountdown() {
     // Jika tidak, set endTime ke 12:00:00
     endTime.setHours(12, 0, 0, 0);
   }
-
+  
   var timeDifference = endTime - now; // Menghitung selisih waktu
 
   var hours = Math.floor(timeDifference / (1000 * 60 * 60)); // Menghitung jam
