@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>Butchery | Mitra Center</title>
     <link
       rel="shortcut icon"
@@ -26,14 +28,31 @@
             /></a>
             <p class="font-medium text-[24px] mt-2 text-[#999]">Pusat Mitra</p>
           </div>
-          <div class="lg:gap-3 md:gap-1 flex items-center" id="icon-bar">
-            <a href=""
+          <div class="flex items-center gap-5" id="icon-bar">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" stroke="#2b2b2b" stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 19v-9a6 6 0 0 1 6-6v0a6 6 0 0 1 6 6v9M6 19h12M6 19H4m14 0h2m-9 3h2"
+                  />
+                  <circle cx="12" cy="3" r="1" />
+                </g></svg
+            ></a>
+            <a href="" class="flex items-center lg:gap-3 md:gap-1"
               ><img
                 src="asset/registerMitra/profile.svg"
                 alt=""
                 class="border-2 border-[#D10B05] rounded-full"
-            /></a>
-            <p class="font-medium">Rahmat Messi Talahu</p>
+              />
+              <p class="font-medium hover:underline">Rahmat Messi Talahu</p></a
+            >
           </div>
         </div>
       </div>
@@ -66,22 +85,24 @@
 
         <div class="border-t-2 border-solid border-[#E6E6E6] mt-5 mx-4"></div>
 
-        <h1 class="flex items-center font-semibold px-6 pt-6 text-[18px]">
-          <svg
-            class="mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#2b2b2b"
-              d="M22 3H2v6h1v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9h1V3zM4 5h16v2H4V5zm15 15H5V9h14v11zM9 11h6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
-            />
-          </svg>
-          Produk
-        </h1>
-        <div class="font-medium">
+        <a href="" class="nav-item" id="produk">
+          <h1 class="flex items-center font-semibold px-6 pt-6 text-[18px]">
+            <svg
+              class="mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2b2b2b"
+                d="M22 3H2v6h1v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9h1V3zM4 5h16v2H4V5zm15 15H5V9h14v11zM9 11h6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            Produk
+          </h1>
+        </a>
+        <div class="font-medium hidden" id="menu-produk">
           <p class="mt-4">
             <a
               href=""
@@ -104,10 +125,7 @@
             >
           </p>
         </div>
-        <a
-          href=""
-          class="flex items-center active-nav-link cta-btn py-4 pl-6 nav-item"
-        >
+        <a href="" class="flex items-center py-4 pl-6 nav-item">
           <svg
             class="mr-2"
             xmlns="http://www.w3.org/2000/svg"
@@ -123,22 +141,24 @@
           <p class="font-semibold text-[18px]">Pesanan</p>
         </a>
 
-        <h1 class="flex items-center font-semibold px-6 text-[18px]">
-          <svg
-            class="mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#2b2b2b"
-              d="M22 3H2v6h1v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9h1V3zM4 5h16v2H4V5zm15 15H5V9h14v11zM9 11h6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
-            />
-          </svg>
-          Produk
-        </h1>
-        <div class="font-medium">
+        <a href="" class="nav-item" id="data">
+          <h1 class="flex items-center font-semibold px-6 text-[18px]">
+            <svg
+              class="mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2b2b2b"
+                d="M22 3H2v6h1v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9h1V3zM4 5h16v2H4V5zm15 15H5V9h14v11zM9 11h6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            Data
+          </h1>
+        </a>
+        <div class="font-medium hidden" id="menu-data">
           <p class="mt-4">
             <a
               href=""
@@ -163,5 +183,31 @@
         </div>
       </nav>
     </aside>
+
+    <script>
+      // Menambahkan event listener untuk link dengan ID "produk"
+      $("#produk").click(function (e) {
+        e.preventDefault();
+        $("#menu-produk").slideToggle(); // Menggunakan slideToggle untuk animasi
+        $("#menu-data").slideUp(); // Menyembunyikan menu-data dengan animasi slideUp
+      });
+
+      // Menambahkan event listener untuk link dengan ID "data"
+      $("#data").click(function (e) {
+        e.preventDefault();
+        $("#menu-data").slideToggle(); // Menggunakan slideToggle untuk animasi
+        $("#menu-produk").slideUp(); // Menyembunyikan menu-produk dengan animasi slideUp
+      });
+
+      // Mencegah event klik menyebar ke dalam menu-produk
+      $("#menu-produk").on("click", function (e) {
+        e.stopPropagation();
+      });
+
+      // Mencegah event klik menyebar ke dalam menu-data
+      $("#menu-data").on("click", function (e) {
+        e.stopPropagation();
+      });
+    </script>
   </body>
 </html>
