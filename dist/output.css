@@ -590,8 +590,12 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+
 .bottom-0 {
   bottom: 0px;
+
 }
 
 .right-0 {
@@ -606,12 +610,20 @@ video {
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
+.top-\[150px\] {
+  top: 150px;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.top-\[170px\] {
+  top: 170px;
+}
+
+.bottom-\[125px\] {
+  bottom: 125px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .col-span-2 {
@@ -844,6 +856,9 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-44 {
+  margin-top: 11rem;
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -858,6 +873,7 @@ video {
 
 .ml-14 {
   margin-left: 3.5rem;
+
 }
 
 .block {
@@ -944,6 +960,7 @@ video {
   height: 80%;
 }
 
+
 .h-screen {
   height: 100vh;
 }
@@ -951,7 +968,6 @@ video {
 .h-full {
   height: 100%;
 }
-
 .w-1 {
   width: 0.25rem;
 }
@@ -1028,6 +1044,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1075,6 +1095,9 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+
+.gap-\[130px\] {
+  gap: 130px;
 
 .gap-8 {
   gap: 2rem;
@@ -1303,6 +1326,11 @@ video {
   padding-right: 56px;
 }
 
+.px-\[85px\] {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1433,6 +1461,22 @@ video {
   padding-top: 201px;
 }
 
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-\[72\] {
+  padding-bottom: 72;
+}
+
+.pb-\[72px\] {
+  padding-bottom: 72px;
+
 .pl-14 {
   padding-left: 3.5rem;
 }
@@ -1443,6 +1487,7 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+
 }
 
 .text-center {
@@ -1698,6 +1743,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1707,6 +1753,7 @@ video {
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
 
 .focus\:border-\[\#D10B05\]:focus {
   --tw-border-opacity: 1;
