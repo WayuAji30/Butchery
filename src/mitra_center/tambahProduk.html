@@ -159,14 +159,14 @@
         <div class="font-medium hidden" id="menu-data">
           <p class="mt-4">
             <a
-              href="tambahProduk.html"
+              href="trenDaging.html"
               class="text-[#999] hover:text-[#D10B05] border-l-4 py-2 border-white pl-[58px]"
               >Tren Daging</a
             >
           </p>
           <p class="mt-4">
             <a
-              href="daftarProduk.html"
+              href=""
               class="text-[#999] hover:text-[#D10B05] border-l-4 py-2 border-white pl-[58px]"
               >Pengunjung</a
             >
@@ -186,9 +186,228 @@
     <div
       class="w-full h-screen bg-[#f3f3f3] overflow-x-hidden border-t flex flex-col"
     >
-      <div
-        class="mt-32 bg-white rounded-tl-2xl w-full h-full ml-4 shadow-md"
-      ></div>
+      <div class="mt-32 bg-white rounded-tl-2xl w-full h-[250%] ml-4 shadow-md">
+        <p class="mt-7">
+          <a
+            href=""
+            class="text-[#D10B05] text-[20px] pb-4 px-11 border-b-4 border-[#D10B05] font-medium"
+            >Informasi Produk</a
+          >
+        </p>
+        <div class="ml-12 border-t-2 border-solid border-[#E6E6E6] mt-4"></div>
+
+        <div class="flex ml-11 mt-10 gap-10 items-center">
+          <div>
+            <p class="font-semibold text-[18px]">Foto Produk</p>
+            <p class="mt-4">
+              Format gambar jpg, jpeg, dan <br />
+              png. Pilih foto produk atau <br />tarik dan upload max. 3 foto
+              <br />
+              yang menarik dan berbeda <br />
+              satu sama lain untuk menarik <br />
+              perhatian pembeli.
+            </p>
+          </div>
+          <form action="">
+            <input type="file" />
+            <input type="file" />
+            <input type="file" />
+          </form>
+        </div>
+        <div class="flex ml-11 mt-16 items-center">
+          <p class="font-semibold text-[18px] mr-64">Nama Produk</p>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Ketikan Disini"
+              class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] focus:outline-[#D10B05]"
+            />
+          </form>
+        </div>
+        <div class="flex ml-11 mt-10 items-center">
+          <p class="font-semibold text-[18px] mr-[300px]">Kategori</p>
+          <form action="">
+            <select
+              name=""
+              id="Kategori"
+              class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] focus:outline-[#D10B05]"
+            >
+              <option value="">Pilih kategori produkmu</option>
+              <option value="">Ayam</option>
+              <option value="">Sapi</option>
+            </select>
+          </form>
+        </div>
+        <div class="flex ml-11 mt-10 items-center">
+          <div>
+            <p class="font-semibold text-[18px] mr-[230px]">Deskripsi Produk</p>
+            <p class="mt-4">
+              Pastikan deskripsi produk <br />
+              memuat penjelasan detail <br />
+              terkait produkmu agar pembeli <br />
+              mudah mengerti dan <br />
+              menemukan produkmu.
+            </p>
+          </div>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Ketikan deskripsi produkmu disini"
+              class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] h-64 focus:outline-[#D10B05]"
+            />
+            <p class="mt-2">
+              <span class="text-[#D10B05]">*</span> Tulis deskripsi produkmu
+              max. 1200 karakter.
+            </p>
+          </form>
+        </div>
+
+        <div class="grid grid-rows-1 grid-flow-col ml-11 mt-14">
+          <div class="row-span-3">
+            <div>
+              <p class="font-semibold text-[18px]">Harga & Berat Produk</p>
+              <p class="mt-4">
+                Masukan varian berat produk <br />
+                daging yang kamu jual, serta <br />
+                masukan juga jumlah stok <br />
+                yang tersedia untuk masing <br />
+                masing varian berat. Klik <br />
+                tambah untuk menambah <br />jumlah varian.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2">
+            <div class="bg-[#eeeeee] w-[547px] rounded-md">
+              <form action="" class="px-10 py-5">
+                <label for="" class="font-semibold mr-4">Varian 1</label>
+                <input
+                  type="text"
+                  placeholder="Contoh: 250gr"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-[29px]">Harga</label>
+                <input
+                  type="text"
+                  placeholder="Masukan dalam Rupiah"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-10">Stok</label>
+                <input
+                  type="text"
+                  placeholder="Contoh: 17"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-span-2 mt-5" id="varian-plus">
+            <div class="bg-[#eeeeee] w-[547px] rounded-md">
+              <form
+                action=""
+                class="px-10 py-5"
+                style="display: flex; align-items: center"
+              >
+                <label for="" class="font-semibold mr-4">Varian 2</label>
+                <button
+                  form="none"
+                  id="btn-tambah-produk"
+                  class="flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+                >
+                  <span
+                    ><img
+                      src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
+                      alt=""
+                  /></span>
+                  Tambah Varian
+                </button>
+
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Contoh: 250gr"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-[29px]" hidden>Harga</label>
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Masukan dalam Rupiah"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-10" hidden>Stok</label>
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Contoh: 17"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-span-2 mt-5" id="varian-plus-3" hidden>
+            <div class="bg-[#eeeeee] w-[547px] rounded-md">
+              <form
+                action=""
+                class="px-10 py-5"
+                style="display: flex; align-items: center"
+              >
+                <label for="" class="font-semibold mr-4">Varian 3</label>
+                <button
+                  form="none"
+                  id="btn-tambah-produk"
+                  class="flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+                >
+                  <span
+                    ><img
+                      src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
+                      alt=""
+                  /></span>
+                  Tambah Varian
+                </button>
+
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Contoh: 250gr"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-[29px]" hidden>Harga</label>
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Masukan dalam Rupiah"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+                <label for="" class="mr-10" hidden>Stok</label>
+                <input
+                  hidden
+                  type="text"
+                  placeholder="Contoh: 17"
+                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="my-20">
+          <div class="flex items-center gap-3 justify-end mr-[26%]">
+            <form action="">
+              <button
+                class="border-2 border-[#D10B05] text-[#D10b05] py-2 px-14 rounded-md font-semibold"
+              >
+                Kembali
+              </button>
+            </form>
+            <form action="">
+              <button
+                class="border-2 border-[#D10B05] text-white bg-[#D10b05] py-2 px-14 rounded-md font-semibold"
+              >
+                Simpan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/hamburgerToggle.js"></script>
@@ -218,5 +437,7 @@
         e.stopPropagation();
       });
     </script>
+
+    <script src="js/tambahProduk.js"></script>
   </body>
 </html>
