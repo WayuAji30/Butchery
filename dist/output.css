@@ -1933,6 +1933,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:outline-\[\#D10B05\]:hover {
+  outline-color: #D10B05;
+}
+
 .focus\:border-\[\#D10B05\]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(209 11 5 / var(--tw-border-opacity));
