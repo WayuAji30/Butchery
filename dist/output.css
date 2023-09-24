@@ -748,10 +748,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .ml-24 {
   margin-left: 6rem;
 }
@@ -798,6 +794,10 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
 }
 
 .mr-4 {
@@ -914,18 +914,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.ml-14 {
-  margin-left: 3.5rem;
-}
-
-.mr-14 {
-  margin-right: 3.5rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
 }
 
 .block {
@@ -1068,6 +1056,10 @@ video {
   width: 328px;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1092,10 +1084,6 @@ video {
   width: 100%;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .flex-none {
   flex: none;
 }
@@ -1116,12 +1104,6 @@ video {
 
 .list-none {
   list-style-type: none;
-}
-
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .grid-flow-col {
@@ -1202,6 +1184,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .overflow-x-hidden {
@@ -1318,6 +1304,11 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-slate-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
 .border-slate-300 {
@@ -1616,6 +1607,10 @@ video {
   padding-top: 36px;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1792,15 +1787,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.checked\:border-transparent:checked {
-  border-color: transparent;
-}
-
-.checked\:bg-red-500:checked {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .hover\:border-2:hover {
   border-width: 2px;
 }
@@ -1864,23 +1850,9 @@ video {
   border-color: rgb(209 11 5 / var(--tw-border-opacity));
 }
 
-.focus\:border-white:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.focus\:border-transparent:focus {
-  border-color: transparent;
-}
-
 .focus\:text-\[\#D10B05\]:focus {
   --tw-text-opacity: 1;
   color: rgb(209 11 5 / var(--tw-text-opacity));
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .focus\:outline-\[\#D10B05\]:focus {
@@ -1889,12 +1861,6 @@ video {
 
 .focus\:outline-white:focus {
   outline-color: #fff;
-}
-
-.focus\:ring-0:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .active\:bg-opacity-80:active {
