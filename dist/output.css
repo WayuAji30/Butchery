@@ -1999,6 +1999,11 @@ video {
   color: rgb(209 11 5 / var(--tw-text-opacity));
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:outline-\[\#D10B05\]:focus {
   outline-color: #D10B05;
 }
