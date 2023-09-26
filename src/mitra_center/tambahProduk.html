@@ -198,39 +198,43 @@
           >
         </p>
         <div class="ml-12 border-t-2 border-solid border-[#E6E6E6] mt-4"></div>
+        <form action="">
+          <div class="flex ml-11 mt-10 gap-10 items-center">
+            <div>
+              <p class="font-semibold text-[18px]">Foto Produk</p>
+              <p class="mt-4">
+                Format gambar jpg, jpeg, dan <br />
+                png. Pilih foto produk atau <br />tarik dan upload max. 3 foto
+                <br />
+                yang menarik dan berbeda <br />
+                satu sama lain untuk menarik <br />
+                perhatian pembeli.
+              </p>
+            </div>
 
-        <div class="flex ml-11 mt-10 gap-10 items-center">
-          <div>
-            <p class="font-semibold text-[18px]">Foto Produk</p>
-            <p class="mt-4">
-              Format gambar jpg, jpeg, dan <br />
-              png. Pilih foto produk atau <br />tarik dan upload max. 3 foto
-              <br />
-              yang menarik dan berbeda <br />
-              satu sama lain untuk menarik <br />
-              perhatian pembeli.
-            </p>
-          </div>
-          <form action="">
-            <input type="file" accept="image/png, image/jpeg, image/jpg" />
-            <input type="file" accept="image/png, image/jpeg, image/jpg" />
-            <input type="file" accept="image/png, image/jpeg, image/jpg" />
-          </form>
-        </div>
-        <div class="flex ml-11 mt-16 items-center">
-          <p class="font-semibold text-[18px] mr-64">Nama Produk</p>
-          <form action="">
             <input
+              type="file"
+              accept="image/png, image/jpeg, image/jpg"
+              required
+            />
+            <input type="file" accept="image/png, image/jpeg, image/jpg" />
+            <input type="file" accept="image/png, image/jpeg, image/jpg" />
+          </div>
+          <div class="flex ml-11 mt-16 items-center">
+            <p class="font-semibold text-[18px] mr-64">Nama Produk</p>
+
+            <input
+              required
               type="text"
               placeholder="Ketikan Disini"
               class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] focus:outline-[#D10B05]"
             />
-          </form>
-        </div>
-        <div class="flex ml-11 mt-10 items-center">
-          <p class="font-semibold text-[18px] mr-[300px]">Kategori</p>
-          <form action="">
+          </div>
+          <div class="flex ml-11 mt-10 items-center">
+            <p class="font-semibold text-[18px] mr-[300px]">Kategori</p>
+
             <select
+              required
               name=""
               id="Kategori"
               class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] focus:outline-[#D10B05]"
@@ -242,177 +246,181 @@
               <option value="">Kambing</option>
               <option value="">Sapi</option>
             </select>
-          </form>
-        </div>
-        <div class="flex ml-11 mt-10 items-center">
-          <div>
-            <p class="font-semibold text-[18px] mr-[230px]">Deskripsi Produk</p>
-            <p class="mt-4">
-              Pastikan deskripsi produk <br />
-              memuat penjelasan detail <br />
-              terkait produkmu agar pembeli <br />
-              mudah mengerti dan <br />
-              menemukan produkmu.
-            </p>
           </div>
-          <form action="">
+          <div class="flex ml-11 mt-10 items-center">
+            <div>
+              <p class="font-semibold text-[18px] mr-[230px]">
+                Deskripsi Produk
+              </p>
+              <p class="mt-4">
+                Pastikan deskripsi produk <br />
+                memuat penjelasan detail <br />
+                terkait produkmu agar pembeli <br />
+                mudah mengerti dan <br />
+                menemukan produkmu.
+              </p>
+            </div>
+
             <input
+              required
               type="text"
               placeholder="Ketikan deskripsi produkmu disini"
               class="px-3 py-4 border-solid border-2 border-[#CCCCCC] text-[#999] rounded-md w-[547px] h-64 focus:outline-[#D10B05]"
             />
-            <p class="mt-2">
-              <span class="text-[#D10B05]">*</span> Tulis deskripsi produkmu
-              max. 1200 karakter.
-            </p>
-          </form>
-        </div>
+          </div>
+          <p class="mt-2 ml-[32%]">
+            <span class="text-[#D10B05]">*</span> Tulis deskripsi produkmu max.
+            1200 karakter.
+          </p>
 
-        <div class="grid grid-rows-1 grid-flow-col ml-11 mt-14">
-          <div class="row-span-3">
-            <div>
-              <p class="font-semibold text-[18px]">Harga & Berat Produk</p>
-              <p class="mt-4">
-                Masukan varian berat produk <br />
-                daging yang kamu jual, serta <br />
-                masukan juga jumlah stok <br />
-                yang tersedia untuk masing <br />
-                masing varian berat. Klik <br />
-                tambah untuk menambah <br />jumlah varian.
-              </p>
+          <div class="grid grid-rows-1 grid-flow-col ml-11 mt-14">
+            <div class="row-span-3">
+              <div>
+                <p class="font-semibold text-[18px]">Harga & Berat Produk</p>
+                <p class="mt-4">
+                  Masukan varian berat produk <br />
+                  daging yang kamu jual, serta <br />
+                  masukan juga jumlah stok <br />
+                  yang tersedia untuk masing <br />
+                  masing varian berat. Klik <br />
+                  tambah untuk menambah <br />jumlah varian.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-span-2">
-            <div class="bg-[#eeeeee] w-[547px] rounded-md">
-              <form action="" class="px-10 py-5">
-                <label for="" class="font-semibold mr-4">Varian 1</label>
-                <input
-                  type="text"
-                  placeholder="Contoh: 250gr"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-[29px]">Harga</label>
-                <input
-                  type="text"
-                  placeholder="Masukan dalam Rupiah"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-10">Stok</label>
-                <input
-                  type="text"
-                  placeholder="Contoh: 17"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-              </form>
+            <div class="col-span-2">
+              <div class="bg-[#eeeeee] w-[547px] rounded-md">
+                <div class="px-10 py-5">
+                  <label for="" class="font-semibold mr-4">Varian 1</label>
+                  <input
+                    required
+                    type="text"
+                    placeholder="Contoh: 250gr"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-[29px]">Harga</label>
+                  <input
+                    required
+                    type="text"
+                    placeholder="Masukan dalam Rupiah"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-10">Stok</label>
+                  <input
+                    required
+                    type="text"
+                    placeholder="Contoh: 17"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-span-2 mt-5" id="varian-plus">
-            <div class="bg-[#eeeeee] w-[547px] rounded-md">
-              <form
-                action=""
-                class="px-10 py-5"
-                style="display: flex; align-items: center"
-              >
-                <label for="" class="font-semibold mr-4">Varian 2</label>
-                <button
-                  form="none"
-                  id="btn-tambah-produk"
-                  class="flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+            <div class="col-span-2 mt-5" id="varian-plus">
+              <div class="bg-[#eeeeee] w-[547px] rounded-md">
+                <div
+                  class="px-10 py-5"
+                  style="display: flex; align-items: center"
                 >
-                  <span
-                    ><img
-                      src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
-                      alt=""
-                  /></span>
-                  Tambah Varian
-                </button>
-
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Contoh: 250gr"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-[29px]" hidden>Harga</label>
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Masukan dalam Rupiah"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-10" hidden>Stok</label>
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Contoh: 17"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-              </form>
+                  <label for="" class="font-semibold mr-4">Varian 2</label>
+                  <button
+                    id="btn-tambah-produk"
+                    form="none"
+                    class="btn-tambah-produk flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+                  >
+                    <span
+                      ><img
+                        src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
+                        alt=""
+                    /></span>
+                    Tambah Varian
+                  </button>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Contoh: 250gr"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-[29px]" hidden>Harga</label>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Masukan dalam Rupiah"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-10" hidden>Stok</label>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Contoh: 17"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-span-2 mt-5" id="varian-plus-3" hidden>
-            <div class="bg-[#eeeeee] w-[547px] rounded-md">
-              <form
-                action=""
-                class="px-10 py-5"
-                style="display: flex; align-items: center"
-              >
-                <label for="" class="font-semibold mr-4">Varian 3</label>
-                <button
-                  form="none"
-                  id="btn-tambah-produk"
-                  class="flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+            <div class="col-span-2 mt-5" id="varian-plus-3" hidden>
+              <div class="bg-[#eeeeee] w-[547px] rounded-md">
+                <div
+                  class="px-10 py-5"
+                  style="display: flex; align-items: center"
                 >
-                  <span
-                    ><img
-                      src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
-                      alt=""
-                  /></span>
-                  Tambah Varian
-                </button>
-
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Contoh: 250gr"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-[29px]" hidden>Harga</label>
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Masukan dalam Rupiah"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-                <label for="" class="mr-10" hidden>Stok</label>
-                <input
-                  hidden
-                  type="text"
-                  placeholder="Contoh: 17"
-                  class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
-                />
-              </form>
+                  <label for="" class="font-semibold mr-4">Varian 3</label>
+                  <button
+                    form="none"
+                    class="btn-tambah-produk flex items-center py-2 px-6 border-dashed border-2 border-[#D10B05] text-[#D10B05] font-semibold gap-3 rounded-md"
+                  >
+                    <span
+                      ><img
+                        src="/src/mitra_center/asset/tambahProduk/buttonPlus.svg"
+                        alt=""
+                    /></span>
+                    Tambah Varian
+                  </button>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Contoh: 250gr"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-[29px]" hidden>Harga</label>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Masukan dalam Rupiah"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                  <label for="" class="mr-10" hidden>Stok</label>
+                  <input
+                    required
+                    hidden
+                    type="text"
+                    placeholder="Contoh: 17"
+                    class="px-3 py-2 border-solid border-2 border-[#e6e6e6] mt-4 text-[#999] rounded-md w-[80%] focus:outline-[#D10B05]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="my-20">
-          <div class="flex items-center gap-3 justify-end mr-[26%]">
-            <form action="daftarProduk.html">
+          <div class="my-20">
+            <div class="flex items-center gap-3 justify-end mr-[26%]">
               <button
+                id="cancelButton"
                 class="border-2 border-[#D10B05] text-[#D10b05] py-2 px-14 rounded-md font-semibold hover:bg-[#D10B05] hover:text-white"
               >
                 Kembali
               </button>
-            </form>
-            <form action="daftarProduk.html">
+
               <button
                 class="border-2 border-[#D10B05] text-white bg-[#D10b05] py-2 px-14 rounded-md font-semibold hover:bg-[#9F0804] hover:border-[#9F0804]"
               >
                 Simpan
               </button>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
