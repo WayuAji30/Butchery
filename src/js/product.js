@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const itemWeight = document.getElementById("item-weight");
   const totalValue = document.getElementById("total-value");
   const valueView = document.getElementById("value-view");
+  const valueStock = document.getElementById("value-stok");
 
   // Mendefinisikan harga awal
   let currentPrice = 99000;
@@ -39,10 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // Menangani klik pada tombol plus
   plusButton.addEventListener("click", function () {
     valueProduct.innerText = (parseInt(valueProduct.innerText) + 1).toString();
+    minusButton.querySelector('path').style.fill = "#d10b05"
     totalValue.innerText = (
       currentPrice * parseInt(valueProduct.innerText)
     ).toLocaleString("id-ID");
   });
+
+  // TODO Melepas event klik pada tombol plus saat jumlah produk yang dipesan melebihi jumlah stok
+  // if (parseInt(valueProduct.innerText) == parseInt(valueStock.innerText)){
+  //   plusButton.querySelector('path').style.fill = "#CCCCCC"
+  //   plusButton.removeEventListener('click', PlusValue())
+  // }
 
   // Menangani klik pada tombol minus
   minusButton.addEventListener("click", function () {
@@ -53,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
       totalValue.innerText = (
         currentPrice * parseInt(valueProduct.innerText)
       ).toLocaleString("id-ID");
+    }
+    if (parseInt(valueProduct.innerText) == 1){
+      minusButton.querySelector('path').style.fill = "#CCCCCC"
     }
   });
 });
