@@ -1,3 +1,4 @@
+// FUCTION UNTUK MENGGANTI TYPE INPUT MENJADI TEXT & PASSWORD
 document.addEventListener("DOMContentLoaded", function () {
   const eyeCloseButtons = document.querySelectorAll(".btn-eye-close");
   const eyeOpenButtons = document.querySelectorAll(".btn-eye-open");
@@ -20,6 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// FUCTION UNTUK MENGARAHKAN BUTTON SIMPAN KE LOGIN.HTML TANPA PERLU REQUIRED DULU
+document.addEventListener("DOMContentLoaded", function () {
+  const cancelButton = document.getElementById("cancelButton");
+
+  cancelButton.addEventListener("click", function (event) {
+    event.preventDefault(); // Mencegah formulir dikirim
+
+    // Mengarahkan ke ../index.html
+    window.location.href = "../login.html";
+  });
+});
+
+// FUNCTION UNTUK VALIDASI INPUT SUDAH DIISI BARU BISA CLICK BUTTON SIMPAN
 document.addEventListener("DOMContentLoaded", function () {
   // Memilih elemen-elemen yang diperlukan
   var emailInput = document.querySelector('input[type="email"]');
