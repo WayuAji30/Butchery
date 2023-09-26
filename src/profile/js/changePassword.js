@@ -19,3 +19,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Memilih elemen-elemen yang diperlukan
+  var emailInput = document.querySelector('input[type="email"]');
+  var passwordInputs = document.querySelectorAll('input[type="password"]');
+  var saveButton = document.getElementById("saveButton");
+
+  // Menambahkan event listener untuk input email
+  emailInput.addEventListener("input", validateInputs);
+
+  // Menambahkan event listener untuk input password
+  for (var i = 0; i < passwordInputs.length; i++) {
+    passwordInputs[i].addEventListener("input", validateInputs);
+  }
+
+  function validateInputs() {
+    // Memeriksa apakah semua input telah diisi
+    var allInputsFilled = true;
+    if (emailInput.value === "") {
+      allInputsFilled = false;
+    }
+    for (var i = 0; i < passwordInputs.length; i++) {
+      if (passwordInputs[i].value === "") {
+        allInputsFilled = false;
+      }
+    }
+
+    // Mengubah warna latar belakang tombol "Simpan"
+    if (allInputsFilled) {
+      saveButton.classList.remove("bg-[#ccc]");
+      saveButton.classList.add("bg-[#D10B05]");
+      saveButton.disabled = false; // Mengaktifkan tombol
+    } else {
+      saveButton.classList.remove("bg-[#D10B05]");
+      saveButton.classList.add("bg-[#ccc]");
+      saveButton.disabled = true; // Menonaktifkan tombol
+    }
+  }
+});
