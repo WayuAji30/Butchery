@@ -687,6 +687,11 @@ video {
   margin-right: 4rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -715,11 +720,6 @@ video {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .-mt-2 {
@@ -812,6 +812,10 @@ video {
 
 .ml-\[230px\] {
   margin-left: 230px;
+}
+
+.ml-\[32\%\] {
+  margin-left: 32%;
 }
 
 .mr-1 {
@@ -956,34 +960,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.-ml-10 {
-  margin-left: -2.5rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
-}
-
-.ml-\[100\%\] {
-  margin-left: 100%;
-}
-
-.ml-\[10\%\] {
-  margin-left: 10%;
-}
-
-.ml-\[40\%\] {
-  margin-left: 40%;
-}
-
-.ml-\[30\%\] {
-  margin-left: 30%;
-}
-
-.ml-\[32\%\] {
-  margin-left: 32%;
 }
 
 .block {
@@ -1166,6 +1142,10 @@ video {
   width: 72%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1186,6 +1166,10 @@ video {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize {
@@ -1609,6 +1593,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1876,23 +1865,24 @@ video {
   color: rgb(241 196 15 / var(--tw-text-opacity));
 }
 
+.text-\[\#b3b3b3\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
 .text-\[\#d10b05\] {
   --tw-text-opacity: 1;
   color: rgb(209 11 5 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-\[\#ffffff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[b3b3b3\] {
-  color: b3b3b3;
-}
-
-.text-\[\#b3b3b3\] {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(179 179 179 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -1963,6 +1953,11 @@ video {
 .hover\:bg-\[\#9F0804\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(159 8 4 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#CCCCCC\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#D10B05\]:hover {
@@ -2331,6 +2326,11 @@ video {
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .lg\:px-7 {
