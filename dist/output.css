@@ -717,6 +717,11 @@ video {
   margin-bottom: 5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -1879,6 +1884,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[b3b3b3\] {
+  color: b3b3b3;
+}
+
+.text-\[\#b3b3b3\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
 }
 
 .line-through {
