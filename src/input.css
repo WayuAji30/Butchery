@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    .page-active {
+        @apply text-white bg-[#D10B05];
+    }
+    .page-active:hover {
+        @apply bg-[#9F0804]
+    }
+}
