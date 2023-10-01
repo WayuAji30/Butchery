@@ -7,6 +7,20 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <!-- liblary splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="text/javascript">
+      // Nanti ganti dengan domain yang bener
+      let redirectUrl = window.location.href + "mobile.html"
+      
+      if (navigator.userAgent.match(/Android/i) ||
+      navigator.userAgent.match(/webOS/i) ||
+      navigator.userAgent.match(/iPhone/i) ||
+      navigator.userAgent.match(/iPad/i) ||
+      navigator.userAgent.match(/iPod/i) ||
+      navigator.userAgent.match(/BlackBerry/i) ||
+      navigator.userAgent.match(/Windows Phone/i)){
+        window.location.replace(redirectUrl);
+      }
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
@@ -2564,7 +2578,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/loader.js"></script>
-    <script src="js/custom.js"></script>
     <script src="js/time.js"></script>
   </body>
 </html>
